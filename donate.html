@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Rescue Connect</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Rescue Connect</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center">Donate for Disaster Relief</h2>
+        <form action="php/donate.php" method="POST" class="p-4 shadow bg-white rounded">
+            <div class="form-group">
+                <label for="donor_name">Your Name</label>
+                <input type="text" class="form-control" name="donor_name" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Donation Amount</label>
+                <input type="number" step="0.01" class="form-control" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="donation_type">Donation Type</label>
+                <select class="form-control" name="donation_type" required>
+                    <option value="money">Money</option>
+                    <option value="supplies">Supplies</option>
+                    <option value="time">Time / Volunteer</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Donate Now</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Rescue Connect | Designed for Disaster Relief
+    </footer>
+
+</body>
+</html>

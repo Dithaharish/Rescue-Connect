@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Sign Up - Rescue Connect</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="index.html">Rescue Connect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="combined_auth.html">Login / Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Auth Card -->
+  <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh; padding-top: 80px;">
+    <div class="card shadow p-4" style="width: 26rem;">
+      <h4 class="text-center mb-4">Rescue Connect</h4>
+
+      <ul class="nav nav-tabs justify-content-center mb-3" id="authTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab">Sign Up</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="authTabContent">
+        <!-- Login Form -->
+        <div class="tab-pane fade show active" id="login" role="tabpanel">
+          <form action="php/role_auth.php" method="POST">
+            <div class="form-group">
+              <label>Login As</label>
+              <select class="form-control" name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="admin">Admin</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="citizen">Donor (Citizen)</option>
+                <option value="authority">Authority</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="tab-pane fade" id="signup" role="tabpanel">
+          <form action="php/register_user.php" method="POST">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="name" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label>Register As</label>
+              <select class="form-control" name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="citizen">Donor (Citizen)</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="authority">Authority</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Location</label>
+              <input type="text" name="location" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

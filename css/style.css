@@ -1,0 +1,134 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form .form-group input,
+  form .form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  /* ===== Card Styling (Login, Features, etc.) ===== */
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .card h4,
+  .card .card-title {
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  .card form {
+    padding-top: 0;
+    margin: 0;
+  }
+  
+  /* ===== Buttons ===== */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* ===== Smooth Scroll & Scroll Spy Behavior ===== */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Offset for anchored sections */
+  #about,
+  #contact,
+  #home {
+    scroll-margin-top: 100px; /* adjust based on navbar height */
+  }
+  

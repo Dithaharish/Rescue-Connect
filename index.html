@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescue Connect</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="Rescue Connect Logo" height="40">
+       </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="combined_auth.html">Login / Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="jumbotron text-center bg-light" id="home">
+    <h1 class="display-4">Real-Time Disaster Relief Coordination</h1>
+    <p class="lead">Predict. Alert. Respond. Recover. Together.</p>
+  </div>
+
+  <!-- Features Section -->
+  <div class="container text-center mb-5">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Disaster Prediction</h5>
+            <p class="card-text">AI-powered early warning for upcoming disasters.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Real-Time Alerts</h5>
+            <p class="card-text">Instant alerts for authorities and citizens via email & SMS.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Resource Allocation</h5>
+            <p class="card-text">Track and distribute supplies and volunteers efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Volunteer Management</h5>
+            <p class="card-text">Smart matching of volunteers based on location and skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Mental Health Support</h5>
+            <p class="card-text">Virtual counseling for disaster victims and families.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Donations & Crowdsourcing</h5>
+            <p class="card-text">Simple, transparent donation management and tracking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+<div class="container mb-5" id="about">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3">
+        <img src="https://source.unsplash.com/600x400/?disaster,teamwork" class="img-fluid rounded shadow" alt="About Rescue Connect">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Rescue Connect is a real-time disaster coordination platform designed to save lives and streamline recovery efforts.
+          Our mission is to bring together volunteers, authorities, and affected citizens through one centralized, intelligent system.
+        </p>
+        <p>
+          Using AI-driven disaster prediction models, instant alert systems, and real-time resource mapping, Rescue Connect ensures that help reaches where it's needed most—fast.
+          We also provide mental health support and connect victims with virtual counseling professionals during and after disasters.
+        </p>
+        <p>
+          We believe that technology and community spirit combined can overcome any emergency.
+          With transparency, collaboration, and accessibility at the core, Rescue Connect aims to redefine how disaster relief is managed.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Us Section -->
+  <div class="container mb-5" id="contact">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <img src="images/logo.jpg" class="img-fluid rounded shadow" alt="Contact Rescue Connect">
+        <ul class="list-unstyled mt-3">
+          <li><strong>Email:</strong> support@rescueconnect.org</li>
+          <li><strong>Phone:</strong> +91-98765-43210</li>
+          <li><strong>Address:</strong> 101 Disaster Relief Avenue, Chennai, India</li>
+          <li><strong>Hours:</strong> Mon–Sat, 9AM – 6PM IST</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center p-3">
+    &copy; 2025 Rescue Connect | Designed for Disaster Relief
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS (Animate on Scroll) CSS & JS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+<!-- ScrollSpy + Active Link + Navbar Offset -->
+<script>
+  // Active link switching on scroll
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section, .jumbotron, #about, #contact');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    let scrollY = window.scrollY + 120; // navbar offset
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const id = section.getAttribute('id');
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  });
+
+  // Collapse navbar on link click (for mobile)
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navCollapse = document.querySelector('.navbar-collapse');
+      if (navCollapse.classList.contains('show')) {
+        navCollapse.classList.remove('show');
+      }
+    });
+  });
+</script>
+</body>
+</html>

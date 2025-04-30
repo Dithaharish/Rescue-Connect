@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration - Rescue Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Rescue Connect</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="donate.html">Donate</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<div class="container my-5">
+    <h2 class="text-center">Join as a Volunteer</h2>
+    <form action="php/volunteer_register.php" method="POST" class="p-4 shadow bg-white rounded" onsubmit="return confirmSubmit()">
+        <div class="form-group">
+            <label for="volunteer_name">Your Name</label>
+            <input type="text" class="form-control" name="volunteer_name" required>
+        </div>
+        <div class="form-group">
+            <label for="volunteer_email">Email Address</label>
+            <input type="email" class="form-control" name="volunteer_email" required>
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills</label>
+            <input type="text" class="form-control" name="skills" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Your Location</label>
+            <input type="text" class="form-control" name="location" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register as Volunteer</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2025 Rescue Connect | Designed for Disaster Relief
+</footer>
+
+<script src="js/volunteer.js"></script>
+</body>
+</html>

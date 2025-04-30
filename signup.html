@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Rescue Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+
+<div class="card p-4 shadow" style="width: 24rem;">
+    <h4 class="text-center mb-3">Create an Account</h4>
+    <form action="php/register_user.php" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Create Password</label>
+            <input type="password" class="form-control" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Register As</label>
+            <select class="form-control" name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="citizen">Donor (Citizen)</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="authority">Authority</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Your Location</label>
+            <input type="text" class="form-control" name="location" required>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+        <p class="text-center mt-2">Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+</div>
+
+</body>
+</html>
